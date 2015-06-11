@@ -15,6 +15,7 @@
 		C296D24E1B274E1A00A66DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C296D24D1B274E1A00A66DF5 /* Assets.xcassets */; };
 		C296D25C1B274E1A00A66DF5 /* UITestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C296D25B1B274E1A00A66DF5 /* UITestSampleTests.swift */; };
 		C296D2671B274E1A00A66DF5 /* UITestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C296D2661B274E1A00A66DF5 /* UITestSampleUITests.swift */; };
+		C29BFE601B2A005100CA7F85 /* refactor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29BFE5E1B2A005100CA7F85 /* refactor.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C296D2621B274E1A00A66DF5 /* UITestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C296D2661B274E1A00A66DF5 /* UITestSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSampleUITests.swift; sourceTree = "<group>"; };
 		C296D2681B274E1A00A66DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C29BFE5F1B2A005100CA7F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/refactor.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				C296D24D1B274E1A00A66DF5 /* Assets.xcassets */,
 				C296D2521B274E1A00A66DF5 /* Info.plist */,
 				C296D24A1B274E1A00A66DF5 /* Main.storyboard */,
+				C29BFE5E1B2A005100CA7F85 /* refactor.storyboard */,
 				C26320501B279A6A00D09F31 /* Second.storyboard */,
 			);
 			path = UITestSample;
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26320511B279A6A00D09F31 /* Second.storyboard in Resources */,
+				C29BFE601B2A005100CA7F85 /* refactor.storyboard in Resources */,
 				C2629E511B27B48300985A1F /* LaunchScreen.storyboard in Resources */,
 				C296D24E1B274E1A00A66DF5 /* Assets.xcassets in Resources */,
 				C296D24C1B274E1A00A66DF5 /* Main.storyboard in Resources */,
@@ -310,6 +314,14 @@
 				C296D24B1B274E1A00A66DF5 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C29BFE5E1B2A005100CA7F85 /* refactor.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C29BFE5F1B2A005100CA7F85 /* Base */,
+			);
+			name = refactor.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

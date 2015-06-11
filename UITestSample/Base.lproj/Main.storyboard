@@ -20,7 +20,7 @@
                                 <rect key="frame" x="231.5" y="285" width="137" height="30"/>
                                 <state key="normal" title="Name To SecondVC"/>
                                 <connections>
-                                    <segue destination="29D-bt-ozs" kind="show" id="A5s-dQ-MKx"/>
+                                    <segue destination="OKd-yu-Xfp" kind="show" id="cig-gm-Jvr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,89 +35,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104" y="-235"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ASG-2Y-W85">
-            <objects>
-                <viewController id="29D-bt-ozs" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a19-dQ-2u0"/>
-                        <viewControllerLayoutGuide type="bottom" id="FAM-rS-J5V"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="alj-IJ-ajI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="53K-Wv-Xm8">
-                                <rect key="frame" x="279" y="36" width="49.5" height="20.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZhA-QD-xsK">
-                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="20.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LTX-cP-Mzl">
-                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="20.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tol-Mg-Xlt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="20.5"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mlm-YT-NZg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="20.5"/>
-                                                                <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iXH-l3-0ZX">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="20.5"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UITest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTB-b7-QoK">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="20.5"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                    </stackView>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT4-R6-Ktv">
-                                <rect key="frame" x="279" y="290" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWa-vf-Q4Q">
-                                <rect key="frame" x="205.5" y="338" width="189" height="30"/>
-                                <state key="normal" title="Name To Tab Bar Controller"/>
-                                <connections>
-                                    <segue destination="huW-4t-cBh" kind="show" id="frT-m7-mGi"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="LT4-R6-Ktv" firstAttribute="centerY" secondItem="alj-IJ-ajI" secondAttribute="centerY" id="4iA-hS-C1H"/>
-                            <constraint firstItem="LT4-R6-Ktv" firstAttribute="centerX" secondItem="alj-IJ-ajI" secondAttribute="centerX" id="HRi-tU-5Nm"/>
-                            <constraint firstItem="CWa-vf-Q4Q" firstAttribute="top" secondItem="LT4-R6-Ktv" secondAttribute="bottom" constant="27.5" id="KSJ-cp-UF0"/>
-                            <constraint firstItem="CWa-vf-Q4Q" firstAttribute="centerX" secondItem="alj-IJ-ajI" secondAttribute="centerX" id="pEp-Mx-dRJ"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UWs-6U-1NO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="768" y="-235"/>
-        </scene>
-        <!--tab_sample-->
-        <scene sceneID="ztD-Zh-AKR">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Second" referencedIdentifier="tab_sample" id="huW-4t-cBh" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dJi-dB-gGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1261" y="-235"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eku-Gh-LC7">
@@ -136,6 +53,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22T-ri-3G5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104" y="-947"/>
+        </scene>
+        <!--refactor-->
+        <scene sceneID="V8K-vR-0i7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="refactor" id="OKd-yu-Xfp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVc-a4-Ndh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="-235"/>
         </scene>
     </scenes>
 </document>
