@@ -17,22 +17,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-IZ-W4V">
-                                <rect key="frame" x="231.5" y="285" width="137" height="30"/>
+                                <rect key="frame" x="231" y="285" width="137" height="30"/>
                                 <state key="normal" title="Name To SecondVC"/>
                                 <connections>
                                     <segue destination="OKd-yu-Xfp" kind="show" id="cig-gm-Jvr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ1-go-Qa4">
+                                <rect key="frame" x="261" y="388" width="77" height="30"/>
+                                <state key="normal" title="extra views"/>
+                                <connections>
+                                    <action selector="didTapExtraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jr-Om-0o7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nQ1-go-Qa4" firstAttribute="centerX" secondItem="RBH-IZ-W4V" secondAttribute="centerX" id="aIh-fK-7rl"/>
                             <constraint firstItem="RBH-IZ-W4V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVd-eA-Oew"/>
                             <constraint firstItem="RBH-IZ-W4V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rDC-Yt-4Ve"/>
+                            <constraint firstItem="nQ1-go-Qa4" firstAttribute="top" secondItem="RBH-IZ-W4V" secondAttribute="bottom" constant="73" id="uLh-l2-7Ed"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uq8-o9-Ki9"/>
+                    <connections>
+                        <outlet property="extraView" destination="0TK-oj-qPZ" id="ETI-CL-hRP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="0TK-oj-qPZ">
+                    <rect key="frame" x="0.0" y="0.0" width="292" height="201"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="extra views" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqA-nR-OdS">
+                            <rect key="frame" x="103" y="90" width="86" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.61568627450000002" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="eqA-nR-OdS" firstAttribute="centerY" secondItem="0TK-oj-qPZ" secondAttribute="centerY" id="81b-mO-bTn"/>
+                        <constraint firstItem="eqA-nR-OdS" firstAttribute="centerX" secondItem="0TK-oj-qPZ" secondAttribute="centerX" id="BiG-6h-fQJ"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="104" y="-235"/>
         </scene>

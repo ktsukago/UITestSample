@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var extraView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +19,17 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
     }
 
-
+    @IBAction func didTapExtraButton(sender: AnyObject) {
+        if self.view.subviews.contains(self.extraView) {
+            self.extraView.removeFromSuperview()
+        } else {
+            self.extraView.frame.origin = CGPointMake(
+                sender.center.x - self.extraView.frame.size.width / 2.0,
+                sender.frame.origin.y + sender.frame.size.height)
+            self.view.addSubview(self.extraView)
+        }
+    }
 }
 
