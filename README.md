@@ -13,3 +13,6 @@
 
 
 ![storyboard_reference2.png](https://qiita-image-store.s3.amazonaws.com/0/28614/9f04d7c5-d4e5-29ac-b6a8-6df44eee7282.png "storyboard_reference2.png")
+
+# extra view
+https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-IB_storyboard/Chapters/AddViewsToDock.html#//apple_ref/doc/uid/TP40014225-CH51-DontLinkElementID_10
