@@ -17,6 +17,7 @@
 		C296D2671B274E1A00A66DF5 /* UITestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C296D2661B274E1A00A66DF5 /* UITestSampleUITests.swift */; };
 		C29BFE601B2A005100CA7F85 /* refactor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29BFE5E1B2A005100CA7F85 /* refactor.storyboard */; };
 		C2BD55A41B2A416E00446B3E /* last.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BD55A31B2A416E00446B3E /* last.storyboard */; };
+		C2BD55A61B2A5AB700446B3E /* CustomPresentationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD55A51B2A5AB700446B3E /* CustomPresentationSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C296D2681B274E1A00A66DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C29BFE5F1B2A005100CA7F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/refactor.storyboard; sourceTree = "<group>"; };
 		C2BD55A31B2A416E00446B3E /* last.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = last.storyboard; sourceTree = "<group>"; };
+		C2BD55A51B2A5AB700446B3E /* CustomPresentationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				C29BFE5E1B2A005100CA7F85 /* refactor.storyboard */,
 				C26320501B279A6A00D09F31 /* Second.storyboard */,
 				C2BD55A31B2A416E00446B3E /* last.storyboard */,
+				C2BD55A51B2A5AB700446B3E /* CustomPresentationSegue.swift */,
 			);
 			path = UITestSample;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C296D2491B274E1A00A66DF5 /* ViewController.swift in Sources */,
+				C2BD55A61B2A5AB700446B3E /* CustomPresentationSegue.swift in Sources */,
 				C296D2471B274E1A00A66DF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

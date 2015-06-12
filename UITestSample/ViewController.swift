@@ -31,5 +31,8 @@ class ViewController: UIViewController {
             self.view.addSubview(self.extraView)
         }
     }
+    
+    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+    }
 }
 

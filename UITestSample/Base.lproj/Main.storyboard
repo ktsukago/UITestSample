@@ -20,7 +20,7 @@
                                 <rect key="frame" x="231" y="285" width="137" height="30"/>
                                 <state key="normal" title="Name To SecondVC"/>
                                 <connections>
-                                    <segue destination="OKd-yu-Xfp" kind="show" id="cig-gm-Jvr"/>
+                                    <segue destination="OKd-yu-Xfp" kind="push" customClass="CustomAnimationPresentationSegue" customModule="UITestSample" customModuleProvider="target" id="cig-gm-Jvr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQ1-go-Qa4">
@@ -30,9 +30,18 @@
                                     <action selector="didTapExtraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jr-Om-0o7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uu2-1J-Qr4">
+                                <rect key="frame" x="251" y="476" width="97" height="30"/>
+                                <state key="normal" title="custom segue"/>
+                                <connections>
+                                    <segue destination="45a-eK-XOL" kind="presentation" customClass="CustomAnimationPresentationSegue" customModule="UITestSample" customModuleProvider="target" id="maA-eW-36L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uu2-1J-Qr4" firstAttribute="top" secondItem="nQ1-go-Qa4" secondAttribute="bottom" constant="58" id="64G-vq-wXN"/>
+                            <constraint firstItem="uu2-1J-Qr4" firstAttribute="centerX" secondItem="nQ1-go-Qa4" secondAttribute="centerX" id="9Im-mO-5LV"/>
                             <constraint firstItem="nQ1-go-Qa4" firstAttribute="centerX" secondItem="RBH-IZ-W4V" secondAttribute="centerX" id="aIh-fK-7rl"/>
                             <constraint firstItem="RBH-IZ-W4V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVd-eA-Oew"/>
                             <constraint firstItem="RBH-IZ-W4V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rDC-Yt-4Ve"/>
@@ -65,6 +74,40 @@
             </objects>
             <point key="canvasLocation" x="104" y="-235"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="eum-cc-lzm">
+            <objects>
+                <viewController id="45a-eK-XOL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RzR-YI-Tqy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ohf-bW-hWo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Xq-WD-Q7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-ns-xdp">
+                                <rect key="frame" x="261" y="285" width="78" height="30"/>
+                                <state key="normal" title="back to top">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EMM-Lx-SqZ" kind="unwind" unwindAction="unwindToTop:" id="iyT-ML-OqI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.4431372549" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GpS-ns-xdp" firstAttribute="centerX" secondItem="1Xq-WD-Q7Y" secondAttribute="centerX" id="Mzj-d0-fHH"/>
+                            <constraint firstItem="GpS-ns-xdp" firstAttribute="centerY" secondItem="1Xq-WD-Q7Y" secondAttribute="centerY" id="wSc-lI-UZH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xh-bF-AkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EMM-Lx-SqZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="464"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eku-Gh-LC7">
             <objects>
@@ -86,7 +129,9 @@
         <!--refactor-->
         <scene sceneID="V8K-vR-0i7">
             <objects>
-                <viewControllerPlaceholder storyboardName="refactor" id="OKd-yu-Xfp" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="refactor" id="OKd-yu-Xfp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="roY-cG-zxW"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVc-a4-Ndh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="768" y="-235"/>
